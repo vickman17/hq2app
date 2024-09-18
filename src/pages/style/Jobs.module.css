@@ -1,0 +1,11 @@
+.Head{
+    --border: 0;
+    box-shadow: none;
+    padding-inline-start: 1rem;
+    font-size: 19px;
+}
+
+.table{
+    border: 1px solid;
+    border-color: var(--ion-job);
+}

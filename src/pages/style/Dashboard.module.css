@@ -1,0 +1,142 @@
+.page{
+    font-family: "Varela Round";
+    padding: 0;
+    background: var(--body_background);
+    color: var(--ion-text-color);
+}    
+
+
+
+.page p{
+    color: var(--ion-text-color);
+}
+
+
+.menu{
+    color: var(--ion-text-color);
+}
+
+
+.lab{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0px solid black;
+    width: 90%;
+    color: var(--ion-text);
+    margin: auto;
+}
+
+.lab p{
+    font-size: 18px;
+}
+
+
+
+
+
+.horizontalScroll{
+    --overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    border: 0px solid black;
+    margin-top: 1rem;
+    height: 22%;
+}
+
+.horizontalScroll::-webkit-scrollbar{
+    display: none;
+}
+
+.scrollContainer{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-left: 3rem;
+    border: 0px solid black;
+}
+
+@media (max-height:790px){
+    .scrollContainer{
+        padding-left: 10px;
+        border: 0px solid black;
+    }
+
+    .horizontalScroll{
+        padding-bottom: 10rem;
+        border: 0px solid black;
+    }
+}
+
+.scrollContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.category{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-height: 790px){
+    .category{
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: space-evenly;
+    }   
+}
+
+.category p{
+    border: 0px solid black;
+    background: var(--ion-primary);
+    color: var(--ion-text-color);
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 10px;
+}
+
+
+
+.horizontalScroll2{
+    --overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    border: 0px solid black;
+    height: 30%;
+}
+
+.horizontalScroll2::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.scrollContainer2{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-left: 1.5rem;
+    border: 0px solid black;
+}
+
+@media (max-height:670px){
+    .scrollContainer2{
+        padding-left: 10px;
+        margin-top: 0.1rem;
+        border: 0px solid black;
+    }
+
+    .horizontalScroll2{
+        padding-bottom: 10rem;
+        border: 0px solid black;
+    }
+}
+
+
+.scrollContainer2::-webkit-scrollbar{
+    display: none;
+}

@@ -1,0 +1,28 @@
+:root{
+    --ion-background-color: #ffffff;
+    --ion-text-color: #000000;
+    --ion-primary: #d9d9d9;
+    --ion-menu-head: #8f9595;
+    --ion-all: #75fb68;
+    --ion-job: black;
+    --ion-name: white;
+    --ion-menu-list: #d6d0d0;
+}
+
+.dark{
+    --ion-background-color: #252525;
+    --ion-text-color: #ffffff;
+    --ion-primary: #2c2c2c;
+    --ion-menu-head: #896555;
+    --ion-menu-list: #252525;
+    --ion-job: #5cb85c; 
+    --ion-all: #5cb85c;
+    --ion-name: rgb(188, 186, 186);
+}
+
+
+
+
+
+
+
