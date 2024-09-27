@@ -8,6 +8,8 @@ import DarkMode from "../components/DarkMode";
 import Theme from "../components/Theme";
 import '../theme/variables.css'
 
+
+
 const Dashboard: React.FC = () => {
     useEffect(() => {
         document.body.style.overflowX = "hidden";

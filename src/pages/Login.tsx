@@ -16,8 +16,12 @@ const Login: React.FC = () => {
   return (
       <IonPage>
           <div>
-            <div style={{alignItems:"left"}}>
+            <div style={{textAlign:"center", border:"1px solid black", marginTop:"5rem"}}>
               <img src={logo} style={{width:"20%", padding: "12px"}}/>
+              <div>
+              oooooooooo
+              </div>
+              
             </div>
             <form className={styles.form}>
               <h1 style={{fontWeight: "100", fontSize:'25px', marginBottom:'-10px'}}>SIGN IN</h1>
