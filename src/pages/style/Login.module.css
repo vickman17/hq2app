@@ -1,0 +1,25 @@
+.page{
+    font-family: "Varela Round";
+    padding: 0;
+    background: var(--body_background);
+    color: var(--ion-text-color);
+}    
+
+.form{
+    text-align: center; 
+    margin-top: 6rem;
+}
+
+@media (max-height:680px){
+    .form{
+        border: 0px solid white;
+        margin-top: 5rem;
+    }
+
+}
+
+@media (max-height:500px){
+    .form{
+        margin-top: 0;
+    }
+}

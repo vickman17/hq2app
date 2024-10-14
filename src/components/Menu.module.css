@@ -1,0 +1,12 @@
+.menuheader{
+    background: var(--ion-menu-head);
+}
+
+
+.menulist{
+    background: var(--ion-menu-list);
+}
+
+.name{
+    color: var(--ion-name);
+}
