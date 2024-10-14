@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 .page{
     font-family: "Varela Round";
     padding: 0;
     background: var(--body_background);
     color: var(--ion-text-color);
 }    
+=======
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
 
 .form{
     text-align: center; 

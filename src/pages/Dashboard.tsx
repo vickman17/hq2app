@@ -7,7 +7,10 @@ import Menu from "../components/Menu";
 import DarkMode from "../components/DarkMode";
 import Theme from "../components/Theme";
 import '../theme/variables.css'
+<<<<<<< HEAD
 import {useUser} from "../hooks/UserContext";
+=======
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
 
 
 
@@ -31,13 +34,21 @@ const Dashboard: React.FC = () => {
     const baker = './Bakerbg.png';
     const eng = './Engbg.png'
     const painter = './Painter2bg.png'
+<<<<<<< HEAD
     const { userInfo } = useUser();
 
+=======
+    const name = "Victory";
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
 
     return (
         <>
             <Menu contentId="dashboard-content" onMenuOpen={handleMenuOpen} onMenuClose={handleMenuClose} />
+<<<<<<< HEAD
             <IonPage id="dashboard-content" className={styles.page}>
+=======
+            <IonPage id="dashboard-content" className='page'>
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
                 <IonHeader style={{ border: "none", boxShadow: "none", padding: "4px", }}>
                     <div style={{ display: 'flex', justifyContent: "space-between", border: "0px solid black", width: "100%", alignItems: "center", margin: "auto" }}>
                         <div className="menu" style={{ border: "0px solid black", justifyItems: "left", width: "fit-content" }}>
@@ -46,7 +57,11 @@ const Dashboard: React.FC = () => {
                         {!menuIsOpen && (
                             <div style={{ display: "flex", border: "0px solid", marginLeft: "auto", alignItems: "center" }} className={`${styles.transitionFade} ${!menuIsOpen ? styles.visible : styles.hidden}`}>
                                 <div style={{ border: "0px solid black", marginLeft: "auto", paddingRight: "1em" }}>
+<<<<<<< HEAD
                                     <h3>Hi <span style={{ color: "#27f316" }}>{userInfo?.firstName}!</span></h3>
+=======
+                                    <h3>Hi <span style={{ color: "#27f316" }}>{name}!</span></h3>
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
                                 </div>
                                 <div style={{ marginLeft: "auto", border: "0px solid yellow" }}>
                                     <ProfilePics />

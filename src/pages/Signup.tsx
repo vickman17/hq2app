@@ -10,7 +10,10 @@ const Signup: React.FC = () => {
     email: "",
     phone: "",
     password: "",
+<<<<<<< HEAD
     user_type: "client"
+=======
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
   });
 
   // State to track submission status or errors
@@ -35,7 +38,11 @@ const Signup: React.FC = () => {
     setIsSubmitting(true); // Disable button when form is being submitted
 
     try {
+<<<<<<< HEAD
       const response = await fetch("http://localhost/hq2endpoint/signup.php", {
+=======
+      const response = await fetch("http://localhost/api/signup.php", {
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,6 +50,7 @@ const Signup: React.FC = () => {
         body: JSON.stringify(formData),
       });
 
+<<<<<<< HEAD
       const data = await response.json(); // Always parse the JSON response
 
       if (response.ok) {
@@ -52,6 +60,15 @@ const Signup: React.FC = () => {
         // Capture additional details if the response is not OK
         const errorDetail = data.error || "An unknown error occurred.";
         setErrorMessage(errorDetail); // Handle error response
+=======
+      if (response.ok) {
+        const data = await response.json();
+        setSuccessMessage(data.message); // Handle success response
+        setErrorMessage("");
+      } else {
+        const data = await response.json();
+        setErrorMessage(data.message); // Handle error response
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
         setSuccessMessage("");
       }
     } catch (error) {
@@ -65,15 +82,26 @@ const Signup: React.FC = () => {
   useEffect(() => {
     document.body.style.backgroundColor = "#252525";
     document.body.style.overflowX = "hidden";
+<<<<<<< HEAD
     document.body.style.overflowY = "auto";
   }, []);
 
   const logo = "/favicon.png";
+=======
+    document.body.style.overflowX = "auto";
+  }, []);
+
+  const logo = "../public/favicon.png";
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
 
   return (
     <IonPage style={{ textAlign: "center" }}>
       <div className={styles.content}>
+<<<<<<< HEAD
         <div style={{ textAlign: "center", marginTop: "2rem" }}>
+=======
+        <div style={{ textAlign: "center", marginTop: "5rem" }}>
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
           <img src={logo} style={{ width: "20%", padding: "10px" }} alt="logo" />
         </div>
         <form className={styles.form} onSubmit={handleSubmit}>
@@ -218,6 +246,7 @@ const Signup: React.FC = () => {
                 fontSize: "16px",
                 backgroundColor: "bab6b5",
                 border: "none",
+<<<<<<< HEAD
                 margin: "auto",
                 display: "flex",
                 alignItems:"center",
@@ -226,6 +255,11 @@ const Signup: React.FC = () => {
               }}
             >
               <img src="/google.png" style={{width: "10%",}} alt="google icon" />
+=======
+              }}
+            >
+              <img src="./google.svg" style={{ alignItems: "auto" }} alt="google icon" />
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
               Google
             </button>
             <div style={{ marginTop: "40px" }}>

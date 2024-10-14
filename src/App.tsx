@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, {useEffect, useState} from 'react';
+=======
+import React, {useEffect} from 'react';
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs, IonIcon, IonLabel, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
@@ -7,7 +11,11 @@ import Signup from './pages/Signup'
 import Verify from './pages/Verify'
 import Dashboard from './pages/Dashboard';
 import Jobs from './pages/Jobs'
+<<<<<<< HEAD
 import {homeOutline, wallet} from 'ionicons/icons'
+=======
+import {homeOutline} from 'ionicons/icons'
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
 
 //import ionic CSS
 import '@ionic/react/css/normalize.css';
@@ -16,16 +24,20 @@ import '@ionic/react/css/structure.css';
 import '@ionic/react/css/typography.css';
 import Menu from './components/Menu';
 import Wallet from './pages/Wallet';
+<<<<<<< HEAD
 import { UserProvider } from './hooks/UserContext';
 import { Storage } from '@ionic/storage';
 import ProtectedRoute from './hooks/ProtectedRouteProps';
 import Transition from './components/Transition';
 
+=======
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
 
 
 setupIonicReact();
 
 const App: React.FC = () => {
+<<<<<<< HEAD
   const [storage, setStorage] = useState<Storage | null>(null); // useState is now correctly imported
 
   // Initialize Ionic Storage
@@ -38,11 +50,15 @@ const App: React.FC = () => {
 
     initStorage(); // Call the initStorage function
   }, []);
+=======
+
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
 
   useEffect(()=>{
     document.body.style.fontFamily = "Varela Round";
   },[])
 
+<<<<<<< HEAD
 
   if (!storage) {
     return <div>Loading...</div>; // You can show a loading screen while storage is being initialized
@@ -64,6 +80,35 @@ const App: React.FC = () => {
           
         </IonReactRouter>
       </UserProvider>
+=======
+  return(
+    <IonApp>
+        <IonReactRouter>
+          <IonRouterOutlet>
+            <Route exact path="/">
+              <Redirect to="/login"/>
+            </Route>
+            <Route path='/login'>
+              <Login/>
+            </Route>
+            <Route path='/verify'>
+              <Verify/>
+            </Route>
+            <Route path='/Signup'>
+              <Signup/>
+            </Route>
+            <Route path='/dashboard'>
+              <Dashboard/>
+            </Route>
+            <Route path='/jobs'>
+              <Jobs/>
+            </Route>
+            <Route path='/wallet'>
+              <Wallet/>
+            </Route>
+          </IonRouterOutlet>
+        </IonReactRouter>
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
     </IonApp>
   )
 

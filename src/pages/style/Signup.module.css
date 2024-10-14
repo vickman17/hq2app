@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 
 
 .form{
     border: 0px solid white;
     margin-top: 4rem;
+=======
+.form{
+    border: 0px solid white;
+    margin-top: 6rem;
+>>>>>>> 045e3193e8097b77a23757af94ccd46b36cb2836
 }
 
 @media (max-height:750px){
